@@ -2,7 +2,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
-  var TxtType = function(el, toRotate, period) {
+var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -57,4 +57,4 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-};
+  };
