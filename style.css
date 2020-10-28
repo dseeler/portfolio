@@ -83,6 +83,18 @@ body{
   color: #32cd32;
 }
 
+#currentText{
+  
+}
+
+#currentLink{
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 #menuToggle{
   display: block;
   position: absolute;
