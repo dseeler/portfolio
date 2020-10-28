@@ -13,6 +13,7 @@ body{
 }
 
 .row{
+
 }
 
 .col{
@@ -73,7 +74,7 @@ body{
 }
 
 .link:hover{
-  color: tomato;
+  color: #32cd32;
 }
 
 #menuToggle{
@@ -198,18 +199,6 @@ body{
   color: white;
 }
 
-#socialsBox ul li:hover.instagram{
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-instagram {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
 .fa-github { 
   background: #000000; 
   color: white;
@@ -250,3 +239,6 @@ footer{
   bottom: 0;
 }
 
+#space{
+  color: silver;
+}
