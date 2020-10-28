@@ -83,10 +83,6 @@ body{
   color: #32cd32;
 }
 
-#currentText{
-  
-}
-
 #currentLink{
   pointer-events: none;
   cursor: default;
@@ -259,4 +255,34 @@ footer{
 
 #space{
   color: silver;
+}
+
+#aboutmeRow{
+  margin-top: min(4.5%, 30px);
+  margin-bottom: min(20px, 4%);
+}
+
+#aboutmeHeader{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#aboutmePic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max(50px, 20%);
+  height: max(50px, 20%);
+  min-width: 150px;
+  min-height: 150px;
+  border: 3px solid white;
+}
+
+#description{
+  margin-top: min(6%, 40px);
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  text-align: center;
+  color: white;
 }
