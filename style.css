@@ -279,10 +279,6 @@ footer{
   border: 3px solid white;
 }
 
-#descriptionRow{
-  
-}
-
 #description{
   margin-top: min(6%, 40px);
   margin-left: auto;
@@ -296,4 +292,19 @@ footer{
 #uga {
   outline-color:white;
   color: red;
+}
+
+#project1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project1description{
+  margin-top: min(3%, 20px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 8.5%;
+  padding-right: 8.5%;
+  color: white;
 }
