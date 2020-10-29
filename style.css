@@ -7,7 +7,7 @@
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-#galleryHTML, #galleryBody{
+html, #galleryHTML, #galleryBody{
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
@@ -80,7 +80,7 @@
 }
 
 #particles-js{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: -1;
