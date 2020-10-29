@@ -1,7 +1,16 @@
-body{
+#normalBody{
   padding: 0;
   margin: 0;
   overflow: hidden;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#galleryBody{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
@@ -247,10 +256,14 @@ body{
   transform: translateY(-10px);
 }
 
-footer{
+#normalFooter{
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+#galleryFooter{
+  margin-top: -8%;
 }
 
 #space{
@@ -299,7 +312,7 @@ footer{
   margin-right: auto;
 }
 
-#project1description{
+.projectdescription{
   margin-top: min(3%, 20px);
   margin-left: auto;
   margin-right: auto;
@@ -307,4 +320,5 @@ footer{
   padding-left: 8.5%;
   padding-right: 8.5%;
   color: white;
+  margin-bottom: 50px;
 }
