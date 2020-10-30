@@ -306,11 +306,6 @@ html, #galleryHTML, #galleryBody{
   color: white;
 }
 
-#uga {
-  outline-color:white;
-  color: red;
-}
-
 .projecttitle{
   margin-left: auto;
   margin-right: auto;
@@ -351,7 +346,6 @@ html, #galleryHTML, #galleryBody{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
 .modal-content {
   text-align: center;
   background-color: black;
@@ -360,10 +354,9 @@ html, #galleryHTML, #galleryBody{
   margin-right: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
 }
 
-/* The Close Button */
 .close {
   color: white;
   margin-top: -13px;
@@ -372,8 +365,7 @@ html, #galleryHTML, #galleryBody{
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: grey;
   text-decoration: none;
   cursor: pointer;
