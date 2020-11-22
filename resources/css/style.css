@@ -1,8 +1,10 @@
 #normalBody{
     padding: 0;
     margin: 0;
-    overflow: hidden;
     background: #232323;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
   }
