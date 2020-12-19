@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" id="galleryHTML">
+<html lang="en">
+
     <head>
         <title>David Seeler</title>
         <meta charset="UTF-8">
@@ -7,13 +8,13 @@
         <link rel="icon" type="image/png" href="resources/media/favicon.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/gallery.css">
     </head>
 
-    <body id="galleryBody">
-        <div id="container">
+    <body>
+        <div id="container-fluid">
             <div id="particles-js"></div>
-            <div id="row1" class="row">
+            <div id="logo" class="row">
                 <div class="col">
                     <a id="davidseeler" href="index.html">&lt;david seeler /&gt;</a>
                 </div>
@@ -44,105 +45,203 @@
                     </div>
                 </div>
             </div>
-            <div id="aboutmeRow" class="row">
-                <h1 id="aboutmeHeader">Gallery</h1>
-            </div>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/triviaracer.gif" width="260" height="320">
-            </div>
-            <h5 class="projecttitle" style="color: rgb(0, 140, 255);">Trivia Racer</h5>  
-            <p class="projectdescription">
-                Online trivia game featuring thousands of questions across 18 categories, provided by Open Trivia Database API. 
-                With a backend developed in Node.js, Trivia Racer is capable of supporting a vast 
-                number of users while maintaining optimal perfomance. Socket.io used to support real-time bidirectional communication 
-                between server and clients. Utilized Bootstrap, jQuery, and Sass to construct a refined mobile-first interface 
-                with crisp animations. App deployed to Heroku and accessible under the SSL certified custom domain <i><a href="http://triviaracer.me">triviaracer.me</a></i>.
-            </p>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/videogameencyclopedia.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: pink">Video Game Encyclopedia</h5>    
-            <p class="projectdescription">
-                Video game browsing application that promotes a simple and productive querying
-                experience, presented in an elegant frontend developed with React.js. Game 
-                data is retrieved through API calls to RAWG.io and stored in a normalized MySQL 
-                database accessed through JDBC. Once data is collected, processed, and stored, a multi-threaded 
-                Java web server is enabled and returns serialized JSON game 
-                data to the calling frontend client.
-            </p>
-            
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/grocery_ecommerce.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: rgb(255, 123, 0);">NED's Grocery eCommerce App</h5>    
-            <p class="projectdescription">
-                Fully dynamic web application emulating a professional eCommerce website. Utilizes a MySQL database to 
-                store encrypted user information and product data. A user may filter his/her query with a specification 
-                of department, price range, or a cross between them. PHP backend manages individual user sessions and 
-                cookies.
-            </p>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/checkers.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: red">Online Checkers</h5>    
-            <p class="projectdescription">
-                Online Checkers game developed with HTML, CSS, and vanilla JavaScript. Utilizes a 
-                multi-threaded Java web server to support multiplayer functionality. 
-                Also features a chat-box that displays System broadcasts 
-                and allows for messaging between the players and spectators.
-            </p>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/arcade.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: mediumslateblue">Arcade App</h5>    
-            <p class="projectdescription">
-                Arcade application featuring my team's implementations of the games Space Invaders
-                and 2048. With a focus on UX/UI in development, my partner and I aimed
-                to deliver an engaging user experience with a design that emphasizes the
-                classic-arcade retro feel. To push the theme even further, we were sure to include
-                the iconic Hi-Scores page as well (records locally). Developed with Java, JavaFX, and CSS.
-            </p>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/galleryapp.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: lightskyblue;">iTunes Gallery</h5>    
-            <p class="projectdescription">
-                Uses the iTunes API to retrieve and display images that correlate to key-words 
-                found in search query. Allows anything from artists, titles, genres, and even movies/shows
-                to be searched. Results are randomly displayed and refreshed with a new image every second.
-                Developed with Java, JavaFX, and CSS.
-            </p>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/portfolio.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: white;">Portfolio</h5>    
-            <p class="projectdescription">
-                My portfolio, designed and developed by me. Uses particles.js,
-                a custom menu button, and Font Awesome. Developed with Bootstrap, HTML, CSS, 
-                and JavaScript. Hosted with GitHub Pages. 
-            </p>
-
-            <div id="project1Row" class="row">
-                <img class="project" src="resources/media/project-uploader.gif" width="320" height="240">
-            </div>
-            <h5 class="projecttitle" style="color: greenyellow;">Project-Uploader</h5>    
-            <p class="projectdescription">
-                When I began creating the gallery in my portfolio, I found that the process of 
-                uploading a gif for a project was much more tedious than I had expected. From having to deal 
-                with a buggy website to convert the screen recording into a gif, to downloading and refactoring
-                 files, to writing an entire block of HTML code and styling it -- the process took quite a bit of time.
-                 So, with the use of MoviePy, I wrote a Python script that instantly converts and uploads a gif to my
-                 gallery, sparing me the hassle of doing it manually.
-            </p>
-            
-            <!--Open Space Here--->
-            
+            <main>
+                <div class="row no-gutters" id="galleryTitle">
+                    <h1>Gallery</h1>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/triviaracer.gif" width="260" height="320">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: rgb(0, 140, 255);">Trivia Racer</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(121, 195, 255);">Real-time multiplayer trivia game</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Thousands of questions across 18 categories provided by Open Trivia Database API
+                            </li>
+                            <li>
+                                Robust Node.js backend built to support a vast number of users while maintaining optimal performance
+                            </li>
+                            <li>
+                                Mobile-first interface constructed using jQuery, Bootstrap, and SCSS
+                            </li>
+                            <li>
+                                Deployed to Heroku under an SSL certified custom domain
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/videogameencyclopedia.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: pink">Video Game Encyclopedia</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(253, 220, 234);">Video game browsing application</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Utilizes RAWG.io API to retrieve JSON metadata for thousands of games
+                            </li>
+                            <li>
+                                Processes and inserts data into normalized MySQL database (accessed via JDBC)
+                            </li>
+                            <li>
+                                Frontend client makes HTTP requests to multi-threaded backend web server to query database
+                            </li>
+                            <li>
+                                Presented in an elegant frontent developed with React.js
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/grocery_ecommerce.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: rgb(255, 123, 0);">NED's Grocery</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(252, 180, 46);">Grocery store eCommerce application</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Fully dynamic web application emulating a professional eCommerce website
+                            </li>
+                            <li>
+                                Utilizes a MySQL database to store encrypted user information and product data
+                            </li>
+                            <li>
+                                PHP backend manages individual user sessions and cookies
+                            </li>
+                            <li>
+                                Filter search for products with a join across categories
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/checkers.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: red">Online Checkers</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(255, 67, 67);">The classic board game, online</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Developed with HTML, CSS, and vanilla JavaScript
+                            </li>
+                            <li>
+                                Multi-threaded Java web server to support multiplayer functionality
+                            </li>
+                            <li>
+                                Chatbox displays system broadcasts and allows for messaging between the players and spectators
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/arcade.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: mediumslateblue">Arcade</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(156, 143, 233);">My implementations of 2048 and Space Invaders</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Developed in Java, JavaFX, and CSS
+                            </li>
+                            <li>
+                                Employed pair-programming techniques
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/galleryapp.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: lightskyblue;">iTunes Gallery</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(167, 219, 252);">Search anything on iTunes</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Uses the iTunes API to retrieve and display images that correlate to key-words found in search query
+                            </li>
+                            <li>
+                                Allows anything from artists, titles, genres, and even movies/shows to be searched
+                            </li>
+                            <li>
+                                Developed with Java, JavaFX, and CSS                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/portfolio.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: whitesmoke;">Portfolio</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: whitesmoke;">My portfolio, created and designed by me</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Developed using HTML, CSS, and JavaScript
+                            </li>
+                            <li>
+                                Bootstrap used for consistency across platforms
+                            </li>
+                            <li>
+                                Hosted with GitHub Pages
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/project-uploader.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: greenyellow;">Project-Uploader</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(217, 255, 160);">Real-time multiplayer trivia game</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Uses MoviePy to instantly convert and upload a gif to my gallery
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
         </div>
         <script type="text/javascript" src="js/particles.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
