@@ -195,8 +195,8 @@ body{
   }
 
   #projectRowBottom{
-    margin-left: 4%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   #projectGIF, #projectTitle, #projectSubtitle, #projectDescription{
@@ -211,10 +211,14 @@ body{
 
   #projectSubtitle{
       font-weight: normal;
- 
   }
 
   #projectDescription{
     font-size: 100%;
     margin-bottom: 35px;
+  }
+
+  #projectDescription li{
+    max-width: 400px;
+    word-wrap: break-word;
   }
