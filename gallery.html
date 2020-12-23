@@ -95,10 +95,13 @@
                     <div class="row no-gutters" id="projectRowBottom">
                         <ul id="projectDescription">
                             <li>
-                                Utilizes RAWG.io API to retrieve JSON metadata for thousands of games
+                                Retrieves JSON metadata for thousands of games using RAWG.io API
                             </li>
                             <li>
-                                Processes and inserts data into normalized MySQL database (accessed via JDBC)
+                                Custom Maven repository used to scrape game descriptions off Wikipedia
+                            </li>
+                            <li>
+                                Processes and inserts cleaned data into normalized MySQL database (accessed via JDBC)
                             </li>
                             <li>
                                 Frontend client makes HTTP requests to multi-threaded backend web server to query database
