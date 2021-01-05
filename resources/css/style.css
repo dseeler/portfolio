@@ -1,4 +1,9 @@
-#normalBody{
+html{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body{
     padding: 0;
     margin: 0;
     background: #232323;
@@ -7,119 +12,77 @@
     max-height: 100% !important;
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
-  }
+}
   
-  html, #galleryHTML, #galleryBody{
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
-  
-  #galleryBody{
-    padding: 0;
-    margin: 0;
-    background: #232323;
-    color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-  }
-  
-  #home{
-    /*position: absolute;*/
-    position: absolute;
-  }
-  
-  .row{
-    
-  }
-  
-  .col{
-  }
-  
-  #row1{
-    margin-left: 0px;
-    margin-top: 8px;
-  }
-  
-  #centerRow{
-    margin-top: max(170px, 17%);
-  }
-  
-  #davidseeler{
-    text-decoration: none;
-    margin-top: 100px
-  }
-  
-  #me{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #profilepic{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 17%;
-    height: 17%;
-    min-width: 150px;
-    min-height: 150px;
-    border: 3px solid white;
-    /*border: 3px solid silver;*/
-    border-radius: 100%;
-  }
-  
-  #greetingDiv{
-    display: block;
-    text-align: center;
-  }
-  
-  #greeting {
-    margin-top: 10px;
-    color: white;
-  } 
-  
-  #davidseeler, .typewrite{
-    color: white !important;
-    font-size: 140%; 
-  }
-  
-  #particles-js{
+#particles-js{
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#logo{
+    color: white;
+}
+
+#me{
+    position: absolute;
+    top: 33%;
+}
+
+#homeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profilepic{
+    width: 10%;
+    height: 10%;
+    min-width: 150px;
+    min-height: 150px;
+    border: 3px solid white;
+    border-radius: 100%;
   }
   
-  .link{
+#greetingDiv{
+    display: block;
+    text-align: center;
+}
+  
+#greeting {
+    margin-top: 10px;
+    color: white;
+} 
+  
+.typewrite{
+    color: white !important;
+    font-size: 140%; 
+}
+
+.link{
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease;
-  }
+}
   
-  .link:hover{
+.link:hover{
     color: #32cd32;
-  }
+}
   
-  #currentLink{
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  #menuToggle{
+#menuToggle{
     display: block;
     position: absolute;
     margin-top: -40px;
     margin-right: -15px;
     top: 50px;
-    right: 50px;
-  
+    right: 50px;  
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-  }
+}
   
-  #menuToggle input{
+#menuToggle input{
     display: block;
     width: 40px;
     height: 32px;
@@ -127,12 +90,12 @@
     top: -7px;
     left: -5px;
     cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
+    opacity: 0;
+    z-index: 2;
     -webkit-touch-callout: none;
-  }
+}
   
-  #menuToggle span{
+#menuToggle span{
     display: block;
     width: 33px;
     height: 4px;
@@ -145,33 +108,33 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
-  }
+}
   
-  #menuToggle span:first-child{
+#menuToggle span:first-child{
     transform-origin: 0% 0%;
-  }
+}
   
-  #menuToggle span:nth-last-child(2){
+#menuToggle span:nth-last-child(2){
     transform-origin: 0% 100%;
-  }
+}
   
-  #menuToggle input:checked ~ span{
+#menuToggle input:checked ~ span{
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
-  }
+}
   
-  #menuToggle input:checked ~ span:nth-last-child(3){
+#menuToggle input:checked ~ span:nth-last-child(3){
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
-  }
+}
   
-  #menuToggle input:checked ~ span:nth-last-child(2){
+#menuToggle input:checked ~ span:nth-last-child(2){
     opacity: 1;
     transform: rotate(-45deg) translate(0, -1px);
-  }
+}
   
-  #menu{
+#menu{
     position: absolute;
     width: 300px;
     margin: -100px 0 0 0;
@@ -184,157 +147,20 @@
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
+}
   
-  #menu li{
+#menu li{
     margin-left: -20px;
     padding: 10px 0;
     font-size: 22px;
-  }
+}
   
-  #menuToggle input:checked ~ ul{
+#menuToggle input:checked ~ ul{
     transform: scale(1.0, 1.0);
     opacity: 1;
-  }
-  
-  #row3{
-    border-top: 2px solid black;
-    background-color: silver;
-    margin-top: 10%;
-  }
-  
-  #socialsBox{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 80px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 10%;
-  }
-  
-  .fa-linkedin { 
-    color: white;
-    background: #007bb5;
-  }
-  
-  .fa-instagram { 
-    background: #E1306C;
-    color: white;
-  }
-  
-  .fa-github { 
-    background: #000000; 
-    color: white;
-  }
-  
-  .fa-reddit{ 
-    background: #ff5700;
-    color: white;
-  }
-  
-  #socials{
-    list-style-type: none;
-  }
-  
-  #socials li{
-    display: inline;
-    float: left;
-    
-  }
-  
-  #socials li a{
-      text-align: center;
-      text-decoration: none;
-  }
-  
-  #socials li a:hover {
-    color: white;
-    transition: all 0.5s ease;
-  }
-  
-  #socials li a:hover {
-    transform: translateY(-10px);
-  }
-  
-  #normalFooter{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  #galleryFooter{
-    margin-top: -5%;
-  }
-  
-  #space{
-    color: silver;
-  }
-  
-  #aboutmeRow{
-    margin-top: min(4.5%, 30px);
-    margin-bottom: min(20px, 4%);
-  }
-  
-  #aboutmeHeader{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  #aboutmePic{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: max(50px, 20%);
-    height: max(50px, 20%);
-    min-width: 150px;
-    min-height: 150px;
-    border: 3px solid white;
-  }
-  
-  #description{
-    margin-top: min(6%, 40px);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-left: 8.5%;
-    padding-right: 8.5%;
-    color: white;
-  }
-  
-  .projecttitle{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: -10px;
-  }
-  
-  .project{
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid silver;
-  }
-  
-  .projectdescription{
-    margin-top: min(3%, 14px);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-left: 8.5%;
-    padding-right: 8.5%;
-    color: white;
-    margin-bottom: 50px;
-  }
-  
-  .modal {
+}
+
+.modal {
     display: none;
     position: fixed; 
     z-index: 1; 
@@ -345,9 +171,9 @@
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
-  }
+}
   
-  .modal-content {
+.modal-content {
     text-align: center;
     background-color: black;
     margin-top: max(20%, 220px);
@@ -356,35 +182,171 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; 
-  }
+}
   
-  .close {
+.close {
     color: white;
     margin-top: -13px;
     margin-left: 96%;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
-  .close:hover, .close:focus {
+.close:hover, .close:focus {
     color: grey;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+#aboutMeContainer{
+    text-align: center;
+    margin-bottom: 10%; 
+}
   
-  #resumeButton{
+#aboutMeTitle{
+    margin-bottom: 15px;
+    color: white;
+}
+  
+#aboutmePic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max(50px, 20%);
+    height: max(50px, 20%);
+    min-width: 150px;
+    min-height: 150px;
+    border: 3px solid white;
+}
+
+#aboutMeText{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#resumeButton{
     border: 1px solid white;
     padding: 5px 10px;
-    margin-top: min(40px, 3%);
     margin-left: auto;
     margin-right: auto;
     background-color: #232323;
     border-radius: 10%;
     text-decoration: none;
     color: white;
-  }
+}
   
-  #resumeButton:hover{
+#resumeButton:hover{
     border: 1px solid silver;
     color: silver;
-  }
+}
+
+#galleryTitle h1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#projectRow, #projectRowTop, #projectRowMiddle, #projectRowBottom{
+    width: 100%;
+    height: 100%;
+}
+
+#projectRowBottom{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#projectGIF, #projectTitle, #projectSubtitle, #projectDescription{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projectGIF{
+    border: 2px solid silver;
+    margin-bottom: 15px;
+}
+
+#projectSubtitle{
+    font-weight: normal;
+}
+
+#projectDescription{
+    font-size: 100%;
+    margin-bottom: 35px;
+}
+
+#projectDescription li{
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid black;
+    background-color: silver;
+}
+
+#socialsBox{
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+}
+  
+.fa-linkedin { 
+    color: white;
+    background: #007bb5;
+}
+  
+.fa-instagram { 
+    background: #E1306C;
+    color: white;
+}
+  
+.fa-github { 
+    background: #000000; 
+    color: white;
+}
+  
+.fa-reddit{ 
+    background: #ff5700;
+    color: white;
+}
+  
+#socials{
+    list-style-type: none;
+}
+  
+#socials li{
+    display: inline;
+    float: left;
+    
+}
+  
+#socials li a{
+      text-align: center;
+      text-decoration: none;
+}
+  
+#socials li a:hover {
+    color: white;
+    transition: all 0.5s ease;
+}
+  
+#socials li a:hover {
+    transform: translateY(-10px);
+}

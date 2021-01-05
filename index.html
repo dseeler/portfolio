@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,66 +12,280 @@
         <link rel="stylesheet" href="resources/css/style.css">
     </head>
 
-    <body id="normalBody">
-        <div id="container">
-            <div id="particles-js"></div>
-            <div id="row1" class="row">
-                <div class="col">
-                    <a id="davidseeler" href="index.html">&lt;david seeler /&gt;</a>
-                </div>
-                <div class="col">
-                    <nav id="menuButton" role="navigation">
-                        <div id="menuToggle">
-                          <input type="checkbox" />
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                          <ul id="menu">
-                            <a id="currentLink" class="link"><li>Home</li></a>
-                            <a class="link" href="about.html"><li>About</li></a>
-                            <a class="link" href="gallery.html"><li>Gallery</li></a>
-                            <a class="link" href="resources/media/resume.pdf" download><li>Resume</li></a>
-                            <a id="myBtn" class="link" href="#"><li>Contact</li></a>
-                          </ul>
-                        </div>
-                    </nav>
-                    <div id="myModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>
-                                Let's get in touch! 
-                                Reach out to me at <a href = "mailto: das09474@uga.edu">das09474@uga.edu</a>.
-                            </p>
-                        </div>
-                    </div>
+    <body>
+        <div id="home"></div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-gradient">
+            <a class="navbar-brand" id="logo" href="#brand">&lt;david seeler /&gt;</a>
+            <div class="navbar-text" id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a class="link" href="#home"><li>Home</li></a>
+                    <a class="link" href="#about"><li>About</li></a>
+                    <a class="link" href="#gallery"><li>Gallery</li></a>
+                    <a class="link" href="resources/media/resume.pdf" download><li>Resume</li></a>
+                    <a id="myBtn" class="link" href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>
+                        Let's get in touch! 
+                        Reach out to me at <a href = "mailto: das09474@uga.edu">das09474@uga.edu</a>.
+                    </p>
                 </div>
             </div>
-            <div id="centerRow" class="row">
+        </nav>
+        <div id="particles-js"></div>
+        <div class="title jumbotron jumbotron-fluid bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0">
+            <div class="container container-fluid text-center" id="homeContainer">
                 <div id="me">
                     <img id="profilepic" src="resources/media/profilepic.png">
                     <div id="greetingDiv">
                         <p id="greeting">
-                            <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I&apos;m David.", "I am driven.", "I am strategic.", "I am attentive.", "I am results-oriented.", "I am multifaceted.", "I am creative.", "I am passionate." ]'>
-                              <span class="wrap"></span>
+                            <a class="typewrite" data-period="2000" data-type='[ "Hi, I&apos;m David.", "I am driven.", "I am strategic.", "I am attentive.", "I am results-oriented.", "I am multifaceted.", "I am creative.", "I am passionate." ]'>
+                                <span class="wrap"></span>
                             </a>
                         </p>
                     </div>
                 </div>
             </div>
-            <footer id="normalFooter">
-                <div id="row3" class="row">
-                    <div id="socialsBox">
-                        <ul id="socials">
-                            <li><a href="https://www.instagram.com/davidseeler/" class="fa fa-instagram"></a></li>
-                            <li><a href="https://github.com/davidseeler" class="fa fa-github"></a></li>
-                            <li><a href="https://www.reddit.com/user/bigendian7" class="fa fa-reddit"></a></li>
-                            <li><a href="https://www.linkedin.com/in/david-seeler-b43471170/" class="fa fa-linkedin"></a></li>
-                            <li id="space"><p>******</p></li>
+        </div>
+        <div class="jumbotron jumbotron-fluid m-0 bg-transparent bgstyle text-light" id="about">
+            <div class="container container-fluid text-center" id="aboutMeContainer">
+                <h1 id="aboutMeTitle">About Me</h1>
+                <img id="aboutmePic" src="resources/media/aboutme.jpg"><br>
+                <p id="aboutMeText">
+                    I'm a senior college student at The University of Georgia pursuing a B.S. in 
+                    Computer Science. I am diligent, motivated, and always eager to enhance
+                    my programming knowledge and skills. I have experience in a diverse set of languages including Java, Python, C, C++, Assembly, 
+                    SQL, PHP, JavaScript, HTML and CSS. <span style="color: yellow">I am currently seeking a Software Engineering entry-level position beginning Summer 2021.</span> 
+                </p>
+                <a id="resumeButton" href="resources/media/resume.pdf" download>Resume</a>
+            </div>
+        </div>
+        
+        <div class="jumbotron jumbotron-fluid m-0 bg-transparent bgstyle text-light" id="gallery">
+            <div class="container-fluid">
+                <div class="row no-gutters" id="galleryTitle">
+                    <h1>Gallery</h1>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/triviaracer.gif" width="260" height="320">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: rgb(0, 140, 255);">Trivia Racer</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(121, 195, 255);">Real-time multiplayer trivia game</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Thousands of questions across 18 categories, provided by Open Trivia Database API
+                            </li>
+                            <li>
+                                Real-time socket-based control flow enables complex logic interactions
+                            </li>
+                            <li>
+                                Robust Node.js backend capable of supporting a vast number of users playing concurrently
+                            </li>
+                            <li>
+                                Mobile-first interface constructed using jQuery, Bootstrap, and SCSS
+                            </li>
+                            <li>
+                                Deployed to Heroku under an SSL certified custom domain (<a href="https://triviaracer.me">triviaracer.me</a>)
+                            </li>
+                            <li>
+                                <b>TypeScript, Node.js, Express.js, Socket.io, jQuery, Bootstrap, HTML, SCSS</b>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </footer>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/bank-xp-value.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: yellow;">Bank XP Value</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(255, 255, 138);">RuneLite plugin (<a href="https://runelite.net/plugin-hub/seelrr">600 active installs</a>)</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Developed an external plugin for the popular open-source RuneScape client, <i>RuneLite</i>
+                            </li>
+                            <li>
+                                Self-taught RuneLite’s intricate codebase further enabling me to employ reusability
+                            </li>
+                            <li>
+                                Utilized Google Guice to support dependency injection
+                            </li>
+                            <li>
+                                Became proficient in managing “real” software using the GitHub Flow
+                            </li>
+                            <li>
+                                <b>Java, Java AWT, Guice, RuneLite API</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/videogameencyclopedia.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: pink">Video Game Encyclopedia</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(253, 220, 234);">Video game browsing application</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Retrieves JSON metadata for thousands of games using RAWG.io API
+                            </li>
+                            <li>
+                                Custom JSON parser used to scrape game descriptions off Wikipedia
+                            </li>
+                            <li>
+                                Processes and inserts cleaned data into normalized MySQL database (accessed via JDBC)
+                            </li>
+                            <li>
+                                Frontend client makes HTTP requests to multi-threaded backend web server to query database
+                            </li>
+                            <li>
+                                Presented in an elegant frontent developed with React.js
+                            </li>
+                            <li>
+                                <b>Java, SQL, React.js, CSS</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/grocery_ecommerce.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: rgb(255, 123, 0);">NED's Grocery</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(252, 180, 46);">Grocery store eCommerce application</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Fully dynamic web application emulating a professional eCommerce platform
+                            </li>
+                            <li>
+                                Utilizes a MySQL database to store encrypted user information and product data
+                            </li>
+                            <li>
+                                PHP backend manages individual user sessions and cookies
+                            </li>
+                            <li>
+                                Filter search for products with joins across categories
+                            </li>
+                            <li>
+                                <b>PHP, SQL, JavaScript, HTML, CSS</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/checkers.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: red">Online Checkers</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(255, 67, 67);">The classic board game, online</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Multi-threaded Java web server used to support multiplayer functionality
+                            </li>
+                            <li>
+                                Chatbox displays system broadcasts and allows for messaging between the players and spectators
+                            </li>
+                            <li>
+                                <b>Java, JavaScript, HTML, CSS</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/arcade.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: mediumslateblue">Arcade App</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(156, 143, 233);">My implementations of 2048 and Space Invaders</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Demonstrates strong OOP skills and understanding of complex logic
+                            </li>
+                            <li>
+                                Employed pair-programming techniques
+                            </li>
+                            <li>
+                                <b>Java, JavaFX, CSS</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/portfolio.gif" width="320" height="240">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: whitesmoke;">Portfolio</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: whitesmoke;">My portfolio, created and designed by me</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Hosted with GitHub Pages
+                            </li>
+                            <li>
+                                <b>Bootstrap, JavaScript, HTML, CSS</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+
+        <footer>
+            <div id="row3" class="row">
+                <div id="socialsBox">
+                    <ul id="socials">
+                        <li><a href="https://www.instagram.com/davidseeler/" class="fa fa-instagram"></a></li>
+                        <li><a href="https://github.com/seelrr" class="fa fa-github"></a></li>
+                        <li><a href="https://www.reddit.com/user/bigendian7" class="fa fa-reddit"></a></li>
+                        <li><a href="https://www.linkedin.com/in/david-seeler-b43471170/" class="fa fa-linkedin"></a></li>
+                        <li id="space"><p>******</p></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
         <script type="text/javascript" src="js/particles.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
