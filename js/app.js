@@ -1,6 +1,13 @@
-particlesJS.load('particles-js', '../particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+particlesJS.load('particles-js', '../particles.json', function() {});
+
+window.onscroll = function(){
+  if (window.scrollY >= 420){
+    document.getElementById("arrow").setAttribute("style", "display: none");
+  }
+  else{
+    document.getElementById("arrow").setAttribute("style", "display: block");
+  }
+}
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -83,3 +90,4 @@ window.onload = function() {
       modal.style.display = "none";
     }
   }
+
