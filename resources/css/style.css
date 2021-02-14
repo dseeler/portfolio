@@ -386,3 +386,7 @@ footer{
 #socials li a:hover {
     transform: translateY(-10px);
 }
+
+#hackathon-winner{
+    color: yellow;
+}
