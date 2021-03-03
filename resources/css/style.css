@@ -392,3 +392,23 @@ footer{
     text-decoration: underline;
     text-decoration-thickness: .2px;
 }
+
+#sparc-mac-pic{
+    display: none;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#sparc-mac-button{
+    border: 1px solid white;
+    font-size: 10px;
+    background-color: #232323;
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+}
+
+#sparc-mac-button:focus{
+    outline: none;
+}

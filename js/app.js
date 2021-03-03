@@ -91,3 +91,14 @@ window.onload = function() {
     }
   }
 
+function showImage(){
+  if (
+    $("#sparc-mac-pic").is(":visible")){
+    $("#sparc-mac-pic").hide();
+    $("#sparc-mac-button").html("Show");
+  }
+  else{
+    $("#sparc-mac-pic").show();
+    $("#sparc-mac-button").html("Hide");
+  }
+}
