@@ -61,9 +61,9 @@
                 <h1 id="aboutMeTitle">About Me</h1>
                 <img id="aboutmePic" src="resources/media/aboutme.jpg"><br>
                 <p id="aboutMeText">
-                    <div class="aboutMeParagraph"> With a fascination in the concept of creating something out of nothing, software development quickly became a passion of mine that continues to excite me everyday. Whether it be in class or my free time, I am constantly trying to expand my programming knowledge and elevate my skills to the next level. </div>
+                    <div class="aboutMeParagraph"> With a fascination in the concept of creating something out of nothing, software development quickly became a passion of mine that continues to excite me every day. Whether it be in class or my free time, I am constantly trying to expand my programming knowledge and elevate my skills to the next level. </div>
                     <div class="aboutMeParagraph">Throughout my college career, I have amassed a wealth of top-to-bottom knowledge and acquired experience in a diverse set of languages, frameworks, and various technologies. Additionally, I've also developed a thorough understanding of data structures, algorithms, Scrum/Agile methodologies, and the Cloud.</div>
-                    <div class="aboutMeParagraph" id="paragraph3">Upon graduating Cum Laude with a degree in Computer Science, I am thrilled to say that I will be joining <span style="color: rgb(0, 226, 0)">NCR Corporation</span> as a Software Engineer at their Global Headquarters in Atlanta. I aim to take on challenging tasks, develop practical solutions, and propel my career as a Software Engineer.</div>
+                    <div class="aboutMeParagraph" id="paragraph3">Upon graduating Cum Laude with a degree in Computer Science, I am thrilled to be able to say that I will be joining <span style="color: rgb(0, 226, 0)">NCR Corporation</span> as a Software Engineer at their Global Headquarters in Atlanta. I aim to take on challenging tasks, develop practical solutions, and propel my career as a Software Engineer.</div>
                 </p>
                 <a id="resumeButton" href="resources/media/resume.pdf" target='_blank'>Resume</a>
             </div>
@@ -82,22 +82,25 @@
                         <h4 id="projectTitle" style="color: rgb(126, 186, 255);">Reading Buddy</h4>
                     </div>
                     <div class="row no-gutters" id="projectRowMiddle">
-                        <h6 id="projectSubtitle" style="color: rgb(180, 215, 255);">Interactive group reading tool | 
+                        <h6 id="projectSubtitle" style="color: rgb(180, 215, 255);">Interactive group reading app | 
                             <a id="hackathon-winner" href="http://tinyurl.com/1brswzr5">UGAHacks Winner</a></h6>
                     </div>
                     <div class="row no-gutters" id="projectRowBottom">
                         <ul id="projectDescription">
                             <li>
-                                Upload a file, invite others with a join code, and have a productive and engaging group reading experience 
+                                Upload a file, invite others with a join code, and enjoy an interactive and engaging group reading experience 
                             </li>
                             <li>
-                                Employs Google Chrome's built-in Speech Recognition API to capture client-side input
+                                Speech is captured and fed into a client-side algorithm that filters high-confidence words to be sent to the server (limiting the volume of words avoids flooding sockets)                                
                             </li>
                             <li>
-                                High-confidence speech fed to server-side highlight determination algorithm
+                                Server digests the received words using a complex word-matching algorithm that allows for flexibility in speech-text disparities
                             </li>
                             <li>
-                                Live statistics and highlight advancements broadcasted in real-time
+                                Highlight advancements and live statistics (including WPM and read %) broadcasted in real-time
+                            </li>
+                            <li>
+                                Won 1st Place Best Overall at UGAHacks 6 and became the first-ever solo-hacker to win 1st Place
                             </li>
                             <li>
                                 <b>Node.js, Google Speech Recognition API, Express.js, Socket.io, jQuery, Bootstrap, HTML, SCSS, Heroku</b>
@@ -182,6 +185,39 @@
                 </div>
                 <div class="row no-gutters" id="projectRow">
                     <div class="row no-gutters" id="projectRowTop">
+                        <img class="project" id="projectGIF" src="resources/media/triviaracer.gif" width="260" height="320">
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h4 id="projectTitle" style="color: rgb(0, 140, 255);">Trivia Racer</h4>
+                    </div>
+                    <div class="row no-gutters" id="projectRowMiddle">
+                        <h6 id="projectSubtitle" style="color: rgb(67, 171, 255);">Real-time multiplayer trivia game</h6>
+                    </div>
+                    <div class="row no-gutters" id="projectRowBottom">
+                        <ul id="projectDescription">
+                            <li>
+                                Features thousands of questions across 18 categories, provided by Open Trivia Database API
+                            </li>
+                            <li>
+                                Real-time socket-based control flow enables complex logic interactions
+                            </li>
+                            <li>
+                                Robust Node.js backend capable of supporting a vast number of users playing concurrently
+                            </li>
+                            <li>
+                                Refined mobile-first interface constructed using jQuery, Bootstrap, and SCSS
+                            </li>
+                            <li>
+                                Deployed to Heroku under an SSL certified custom domain (<a href="https://triviaracer.me">triviaracer.me</a>)
+                            </li>
+                            <li>
+                                <b>TypeScript, Node.js, Express.js, Socket.io, jQuery, Bootstrap, HTML, SCSS</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row no-gutters" id="projectRow">
+                    <div class="row no-gutters" id="projectRowTop">
                         <img class="project" id="projectGIF" src="resources/media/ctl-form-processor.gif" width="340" height="250">
                     </div>
                     <div class="row no-gutters" id="projectRowMiddle">
@@ -193,7 +229,7 @@
                     <div class="row no-gutters" id="projectRowBottom">
                         <ul id="projectDescription">
                             <li>
-                                Client would manually edit/format cells, extract data, build an SQL statement, then insert in SMSS
+                                Client would manually edit/format Excel cells, extract data, build an SQL statement, then insert in SMSS
                             </li>
                             <li>
                                 Built a user-friendly desktop application that automates this 30-minute process into a click of a button
@@ -214,39 +250,6 @@
                             </li>
                             <li>
                                 <b>Node.js, Electron.js, Azure SQL Server</b>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row no-gutters" id="projectRow">
-                    <div class="row no-gutters" id="projectRowTop">
-                        <img class="project" id="projectGIF" src="resources/media/triviaracer.gif" width="260" height="320">
-                    </div>
-                    <div class="row no-gutters" id="projectRowMiddle">
-                        <h4 id="projectTitle" style="color: rgb(0, 140, 255);">Trivia Racer</h4>
-                    </div>
-                    <div class="row no-gutters" id="projectRowMiddle">
-                        <h6 id="projectSubtitle" style="color: rgb(67, 171, 255);">Real-time multiplayer trivia game</h6>
-                    </div>
-                    <div class="row no-gutters" id="projectRowBottom">
-                        <ul id="projectDescription">
-                            <li>
-                                Thousands of questions across 18 categories, provided by Open Trivia Database API
-                            </li>
-                            <li>
-                                Real-time socket-based control flow enables complex logic interactions
-                            </li>
-                            <li>
-                                Robust Node.js backend capable of supporting a vast number of users playing concurrently
-                            </li>
-                            <li>
-                                Mobile-first interface constructed using jQuery, Bootstrap, and SCSS
-                            </li>
-                            <li>
-                                Deployed to Heroku under an SSL certified custom domain (<a href="https://triviaracer.me">triviaracer.me</a>)
-                            </li>
-                            <li>
-                                <b>TypeScript, Node.js, Express.js, Socket.io, jQuery, Bootstrap, HTML, SCSS</b>
                             </li>
                         </ul>
                     </div>
@@ -306,7 +309,7 @@
                                 Filter search for products with joins across categories
                             </li>
                             <li>
-                                Fun fact: My Web Development professor requested to use this project as an example for future classes
+                                Chosen to be an example for future classes by request of the professor
                             </li>
                             <li>
                                 <b>PHP, SQL, JavaScript, HTML, CSS</b>
